@@ -1,0 +1,14 @@
+Find Integral Distinguishers:
+1. Run code
+	python3 -u combine_R1_R2_R3_fastv_parent.py p d n s R1 R2 R3
+
+2. Check result
+	vim result_child_p_d_n_s_R1_R2_R3_*
+	
+	If the last sentence is "RE Done!", the code is finished.
+	Meanwhile, it will tell whether it is a integral distinguisher.
+
+Experimental Vrfy:
+1. Run code
+	python3 -u experimental_vrfy.py p d n s
+2. Check if the last sentence is an all zero list. If so, it is a zero-sum integral distinguisher; otherwise, it is not.

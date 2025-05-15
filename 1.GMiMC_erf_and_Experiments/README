@@ -1,0 +1,15 @@
+Find Integral Distinguishers:
+1. Run code to get which Z should be checked in the next step.
+	python3 -u ZS_detect_GMiMC_FindWhichZ.py p d n s R
+
+2. Just copy and paste last several sentences starting with "python3 -u " in the result of Step 1. Then one can get corresponding CVC files. Then
+	nohup stp **.cvc --cryptominisat --threads 4 > result_**.txt &
+
+3. If there is no solution, we get a zero-sum integral distinguisher.
+	
+
+Experimental Vrfy:
+1. Run code
+	python3 -u experiment_vrfy_BlockCipherUsage.py p d n s R
+2. We mount total_c=1000 times for each experiment. If the last sentence shows that percent=100.00%. Then it is a zero-sum integral distinguisher; otherwise, it is not.
+

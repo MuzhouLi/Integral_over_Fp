@@ -1,0 +1,8 @@
+Find Integral Distinguishers:
+1. Run code to get corresponding CVC
+	python3 -u ZS_detect_GMiMC_nyb.py p d n s R
+
+2. For each CVC,
+	nohup stp **.cvc --cryptominisat --threads 4 > result_**.txt &
+
+3. If there exists one CVC that has no solution, we find a zero-sum integral distinguisher.
