@@ -1,0 +1,7 @@
+Practial Key Recovery Attack Test:
+1. Run code
+	python3 -u practical_attack.py 251 3 16 3 1 4 4 > attack_1.txt 
+	python3 -u practical_attack.py 251 3 16 3 2 4 1 > attack_2.txt 
+2. Check if the right key can be recovered for each block
+
+The above code needs about 5 hours each.
